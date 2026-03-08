@@ -6,6 +6,9 @@ pnpm >= 10.30.1
 postgresql >= 17
 ```
 
+Google Maps API Key
+Google Distance Matrix API Key
+
 ## Setup
 
 Make sure to install the dependencies:
