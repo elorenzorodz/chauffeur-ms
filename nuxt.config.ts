@@ -3,4 +3,8 @@ export default defineNuxtConfig({
   modules: ["@nuxt/eslint", "@nuxt/ui", "@nuxt/hints"],
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
+  runtimeConfig: {
+    databaseUrl: "",
+    googleMapsApiKey: "",
+  },
 });
