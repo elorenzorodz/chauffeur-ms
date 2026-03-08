@@ -4,10 +4,9 @@
 node.js >= 24.13.1
 pnpm >= 10.30.1
 postgresql >= 17
-```
-
 Google Maps API Key
 Google Distance Matrix API Key
+```
 
 ## Setup
 
