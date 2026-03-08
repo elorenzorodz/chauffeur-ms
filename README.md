@@ -28,6 +28,12 @@ Start the development server on `http://localhost:3000`:
 pnpm dev
 ```
 
+or (to start development server using .env.local)
+
+```bash
+pnpm dev:local
+```
+
 For viewing database using browser
 
 ```bash

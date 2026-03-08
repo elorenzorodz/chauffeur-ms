@@ -7,7 +7,7 @@ export const users = pgTable("users", {
   firstName: varchar("first_name", { length: 255 }).notNull(),
   lastName: varchar("last_name", { length: 255 }).notNull(),
   email: varchar("email", { length: 255 }).notNull(),
-  phoneNumber: varchar("phonee_number", { length: 255 }).notNull().unique(),
+  phoneNumber: varchar("phone_number", { length: 255 }).notNull().unique(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at"),
 });
@@ -15,8 +15,9 @@ export const users = pgTable("users", {
 export const bookings = pgTable("bookings", {
   id: uuid("id").primaryKey().defaultRandom(),
   pickupDate: timestamp("pickup_date").notNull(),
+  pickupTime: varchar("pickup_time").notNull(),
   pickup: varchar("pickup", { length: 255 }).notNull(),
-  dropoff: varchar("dropoff", { length: 255 }).notNull(),
+  dropOff: varchar("drop_off", { length: 255 }).notNull(),
   numberOfPassengers: integer("number_of_passengers").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at"),

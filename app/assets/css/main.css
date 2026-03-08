@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  --color-amber-brand-500: #cfb153;
+
+  --color-light-background-500: #fbf9fa;
+
+  --ui-primary: var(--color-amber-brand-500);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-light-background-500);
+  }
+}

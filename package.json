@@ -5,18 +5,19 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "dev:local": "dotenvx run --env-file=.env.dev -- nuxt dev",
+    "dev:local": "dotenvx run --env-file=.env.local -- nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "db:push:dev": "dotenvx run --env-file=.env.dev -- drizzle-kit push --config=drizzle-dev.config.ts",
-    "db:studio:dev": "dotenvx run --env-file=.env.dev -- drizzle-kit studio --config=drizzle-dev.config.ts"
+    "db:push:dev": "dotenvx run --env-file=.env.local -- drizzle-kit push",
+    "db:studio:dev": "dotenvx run --env-file=.env.local -- drizzle-kit studio"
   },
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^3.4.2",
     "@googlemaps/js-api-loader": "^2.0.2",
     "@nuxt/ui": "4.5.1",
     "drizzle-orm": "^0.45.1",
+    "libphonenumber-js": "^1.12.38",
     "nuxt": "^4.3.1",
     "postgres": "^3.4.8",
     "vue": "^3.5.29",
@@ -24,6 +25,9 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@dotenvx/dotenvx": "^1.54.1",
+    "@iconify-json/circle-flags": "^1.2.10",
+    "@iconify-json/lucide": "^1.2.96",
     "@nuxt/eslint": "1.15.2",
     "@nuxt/hints": "1.0.0-alpha.10",
     "@types/google.maps": "^3.58.1",
